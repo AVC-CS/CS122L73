@@ -14,6 +14,8 @@ def filterAvg(numbers):
     Code Your Program here
     ########################################
     """
+    filtered = []
+    return filtered
 
 
 def main():
