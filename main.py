@@ -1,12 +1,12 @@
-
-
+import random
 def getRandom(N):
     """
     ########################################
     Code Your Program here
     ########################################
     """
-
+    numbers = [random.randint(1, 100) for _ in range(N)]
+    return numbers
 
 def filterAvg(numbers):
     """
@@ -14,9 +14,9 @@ def filterAvg(numbers):
     Code Your Program here
     ########################################
     """
-    filtered = []
+    average = sum(numbers) / len(numbers)
+    filtered = [v for v in numbers if v > average]
     return filtered
-
 
 def main():
     N = 5
